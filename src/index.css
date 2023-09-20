@@ -42,4 +42,19 @@
   
 }
 
+/* blog previews / list */
+.preview-blog {
+  padding: 10px 16px;
+  margin: 20px 0px;
+  border-bottom: 1px solid #f3eded;
+}
+.preview-blog:hover {
+  box-shadow: 1px 3px 5px rgba(90, 89, 89, 0.1);
+}
+.preview-blog h1 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
 
