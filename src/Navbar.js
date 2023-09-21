@@ -8,6 +8,7 @@ const Navbar = () => {
                 <a href="/create">Create New Blog</a>
             </div>
         </nav>
+        
      );
 }
  
