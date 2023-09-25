@@ -9,6 +9,8 @@ const Home = () => {
         { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
       ]);
 
+      let [name,setName] = useState("Brandon");
+
   
       let handleDelete = (id) => {
         let newBlogs = blogs.filter((blog) => blog.id !== id);
@@ -18,15 +20,15 @@ const Home = () => {
       //useEffect rerenders the ReactDom when each rerun
       useEffect(() => {
         console.log("Use effect Ran");
-        console.log(blogs);
+        console.log(name);
       });
 
   
     return ( 
         <div className="home">
             <BlogList blogs = {blogs} handleDelete = {handleDelete} title = "All blogs"/>
+            <button onClick={()=> setName("Sosah")}>Change Name</button>
         </div>
      );
 }
- 
 export default Home;
